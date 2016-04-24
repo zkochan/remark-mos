@@ -3,7 +3,8 @@
   "version": "0.0.0-placeholder",
   "description": "Inject parts of markdown via hidden JavaScript snippets",
   "files": [
-    "index.js"
+    "index.js",
+    "lib"
   ],
   "main": "index.js",
   "scripts": {
