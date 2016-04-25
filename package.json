@@ -4,7 +4,8 @@
   "description": "Inject parts of markdown via hidden JavaScript snippets",
   "files": [
     "index.js",
-    "lib"
+    "lib",
+    "tonic-example.js"
   ],
   "main": "index.js",
   "scripts": {
@@ -16,12 +17,14 @@
     "coveralls": "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "postcoveralls": "rm -rf ./coverage",
     "md": "mos",
-    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "prepublish": "tonic-example"
   },
   "repository": {
     "type": "git",
     "url": "https://github.com/zkochan/remark-mos"
   },
+  "tonicExampleFilename": "tonic-example.js",
   "keywords": [
     "markdown",
     "remark",
@@ -53,7 +56,9 @@
     "istanbul": "^0.4.2",
     "mocha": "^2.3.4",
     "mos": "^0.11.1",
+    "remark": "^4.2.2",
     "semantic-release": "^4.3.5",
+    "tonic-example": "^0.1.2",
     "validate-commit-msg": "^2.6.1"
   },
   "engines": {

@@ -70,7 +70,9 @@ remark.use(remarkMos, {scope}).process(newmd => {
 - [istanbul](https://github.com/gotwarlost/istanbul): Yet another JS code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests. Supports all JS coverage use cases including unit tests, server side functional tests
 - [mocha](https://github.com/mochajs/mocha): simple, flexible, fun test framework
 - [mos](https://github.com/zkochan/mos): A pluggable module that injects content into your markdown files via hidden JavaScript snippets
+- [remark](https://github.com/wooorm/remark): Markdown processor powered by plugins
 - [semantic-release](https://github.com/semantic-release/semantic-release): automated semver compliant package publishing
+- [tonic-example](https://github.com/zkochan/tonic-example): Tonic example generator
 - [validate-commit-msg](https://github.com/kentcdodds/validate-commit-msg): Script to validate a commit message follows the conventional changelog standard
 
 <!--/@-->
