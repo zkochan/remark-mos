@@ -25,16 +25,23 @@ npm install remark-mos --save
 ## Usage
 
 ```js
+'use strict'
 const remark = require('remark')
 const remarkMos = require('remark-mos')
 
-const markdown = '<!--@foo()--><!--/@-->'
 const scope = {
-  foo: () => 'Hello world!'
+  foo: () => 'Hello world!',
 }
 
-remark.use(remarkMos, {scope}).process(newmd => {
-  console.log(newmd)
+const processor = remark.use(remarkMos, {scope})
+
+const markdown = '<!--@foo()--><!--/@-->'
+processor.process(markdown, (err, newmd) => {
+  if (err) {
+    console.log(err)
+    return
+  }
+  console.log(processor.stringify(newmd))
   //> <!--@foo()-->
   //  Hello world!
   //  <!--/@-->
