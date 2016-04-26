@@ -24,7 +24,8 @@ npm install remark-mos --save
 
 ## Usage
 
-```js
+<!--@example('./example.js')-->
+``` js
 'use strict'
 const remark = require('remark')
 const remarkMos = require('remark-mos')
@@ -47,6 +48,7 @@ processor.process(markdown, (err, newmd) => {
   //  <!--/@-->
 })
 ```
+<!--/@-->
 
 <!--@license()-->
 ## License
