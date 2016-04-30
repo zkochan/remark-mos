@@ -1,5 +1,5 @@
 'use strict'
-const remark = require('remark')
+const remark = require('@zkochan/remark')
 const remarkMos = require('.')
 
 const scope = {
@@ -9,10 +9,4 @@ const scope = {
 const processor = remark.use(remarkMos, {scope})
 
 const markdown = '<!--@foo()--><!--/@-->'
-processor.process(markdown, (err, newmd) => {
-  if (err) {
-    console.log(err)
-    return
-  }
-  console.log(processor.stringify(newmd))
-})
+processor.process(markdown).then(res => console.log(res.result))

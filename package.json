@@ -42,10 +42,10 @@
   },
   "homepage": "https://github.com/zkochan/remark-mos#readme",
   "dependencies": {
-    "async-unist-util-visit": "^1.0.0",
     "run-async": "^2.2.0"
   },
   "devDependencies": {
+    "@zkochan/remark": "^0.1.0",
     "chai": "^3.4.1",
     "cz-conventional-changelog": "1.1.5",
     "eslint": "^2.8.0",
@@ -56,7 +56,6 @@
     "istanbul": "^0.4.2",
     "mocha": "^2.3.4",
     "mos": "^0.14.0",
-    "remark": "^4.2.2",
     "semantic-release": "^4.3.5",
     "tonic-example": "^0.1.2",
     "validate-commit-msg": "^2.6.1"
